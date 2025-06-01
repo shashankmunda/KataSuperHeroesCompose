@@ -2,6 +2,7 @@ package com.karumi.core.ui
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.CoroutineDispatcher
@@ -21,6 +22,8 @@ abstract class ViewModel<C, E> : androidx.lifecycle.ViewModel(), LifecycleObserv
     private var _state: MutableStateFlow<ViewModelState<C, E>> = MutableStateFlow(
         ViewModelState.Loading()
     )
+
+
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     open fun onCreate() {

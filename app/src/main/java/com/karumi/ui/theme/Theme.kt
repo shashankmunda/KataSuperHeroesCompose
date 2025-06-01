@@ -16,7 +16,7 @@ private val LightColorPalette = lightColors(
     primary = PrimaryDark,
     secondary = Secondary,
     background = Background,
-    onBackground = OnBackground
+    onBackground = OnBackground,
 )
 
 @Composable

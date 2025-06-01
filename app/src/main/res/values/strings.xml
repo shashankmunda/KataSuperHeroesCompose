@@ -4,4 +4,5 @@
     <string name="super_heroes_screen_empty_case_text">¯\\_(ツ)_/¯</string>
     <string name="avengers_badge_content_description">Avengers\' Team</string>
     <string name="back_button_content_description">Back</string>
+  <string name="super_heroes_empty_case">No Heroes</string>
 </resources>
